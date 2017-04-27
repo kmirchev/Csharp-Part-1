@@ -1,15 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TryCatchBlock
+
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        try
         {
+            int a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("2 * {0} = {1}", a, 2 * a);
+        }
+        catch (FormatException ex)
+        {
+            Console.WriteLine(ex.Message);
+            //Console.WriteLine("The input is not a number");
         }
     }
 }
+
