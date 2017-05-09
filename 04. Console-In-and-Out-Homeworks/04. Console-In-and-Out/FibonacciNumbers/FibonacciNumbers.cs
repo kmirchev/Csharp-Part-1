@@ -6,12 +6,33 @@
 class FibonacciNumbers
 {
     static void Main()
+
     {
-        //int n = int.Parse(Console.ReadLine());
-       
-        //int fibonacci = (n - 1) + (n - 2);
-        //Console.WriteLine(fibonacci);
+        int N = int.Parse(Console.ReadLine());
+
+        int a = 0;
+        int b = 1;
+        int c = 0;
+
+        if (N == 1)
+        {
+            Console.Write("{0}", 0);
+        }
+        else
+        {
+
+            Console.Write("{0}, {1}", a, b);
+
+            for (int i = 0; i < N - 2; i++)
+            {
+                c = a + b;
+                Console.Write(", {0}", c);
+                a = b;
+                b = c;
+
+            }
+        }
+
     }
 }
-
 
