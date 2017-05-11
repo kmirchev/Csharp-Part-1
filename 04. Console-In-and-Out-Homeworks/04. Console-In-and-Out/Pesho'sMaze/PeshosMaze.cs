@@ -125,7 +125,7 @@
                
             }
             timer.Stop();
-            string message = timer.Elapsed.Seconds <= 15 ? "You beat the clock!" : "Be faster next time!";
+            string message = timer.Elapsed.Seconds <= 20 ? "You beat the clock!" : "Be faster next time!";
             Console.Clear();
             Console.SetCursorPosition(0, 0);
             Console.WriteLine(message);
